@@ -88,25 +88,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><h2 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h2><p>在开始一切之前，你必须已经：<br>本文所使用的环境：</p>
-<h1 id="2-搭建github博客"><a href="#2-搭建github博客" class="headerlink" title="2.搭建github博客"></a>2.搭建github博客</h1><h2 id="2-1-创建仓库"><a href="#2-1-创建仓库" class="headerlink" title="2.1 创建仓库"></a>2.1 创建仓库</h2><p>新建一个名为你的<code>用户名.github.io</code>的仓库，比如说，如果你的github用户名是<code>example</code>，那么你就新建<code>example.github.io</code>的仓库，将来你的网站访问地址就是<code>example.github.io</code>了，是不是很方便？<br>*每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。<br>几个注意的地方：</p>
+        <h1><span id="1前言">1.前言</span></h1><h2><span id="11-准备工作">1.1 准备工作</span></h2><p>在开始一切之前，你必须已经：<br>本文所使用的环境：</p>
+<h1><span id="2搭建github博客">2.搭建github博客</span></h1><h2><span id="21-创建仓库">2.1 创建仓库</span></h2><p>新建一个名为你的<code>用户名.github.io</code>的仓库，比如说，如果你的github用户名是<code>example</code>，那么你就新建<code>example.github.io</code>的仓库，将来你的网站访问地址就是<code>example.github.io</code>了，是不是很方便？<br>*每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。<br>几个注意的地方：</p>
 <hr>
 <p>有一个github账号，没有的话去注册一个<br>安装了node.js、npm，并了解相关基础知识<br>安装了git for windows（或者其它git客户端)</p>
 <hr>
 <p>创建成功后，默认会在你这个仓库里生成一些示例页面，以后你的网站所有代码都是放在这个仓库里啦。</p>
-<h1 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h1><h1 id="3-配置SSH-key"><a href="#3-配置SSH-key" class="headerlink" title="3. 配置SSH key"></a>3. 配置SSH key</h1><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。<br>使用git bash执行以下命令：</p>
+<h1><span id="22">2.2</span></h1><h1><span id="3-配置ssh-key">3. 配置SSH key</span></h1><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。<br>使用git bash执行以下命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
 <p>如果提示：No such file or directory 说明你是第一次使用git</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
 <p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
 <p>将刚复制的内容粘贴到key那里，title随便填，保存。</p>
-<h2 id="3-1-测试是否成功"><a href="#3-1-测试是否成功" class="headerlink" title="3.1. 测试是否成功"></a>3.1. 测试是否成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
+<h2><span id="31-测试是否成功">3.1. 测试是否成功</span></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
 <p>如果提示<br><code>Are you sure you want to continue connecting (yes/no)?</code><br>输入yes</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/04/%E4%BD%BF%E7%94%A8hexo%E4%B8%8Egithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckflwjup70001v8cp6898542r" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/09/04/%E4%BD%BF%E7%94%A8hexo%E4%B8%8Egithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckflxgmll0001vocpbuf7aq21" class="article-share-link">Share</a>
       
       
     </footer>
