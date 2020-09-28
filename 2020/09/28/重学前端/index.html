@@ -7,11 +7,15 @@
   
   <title>lovestave</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="[TOC] javascript 知识架构文法词法语法语义运行时数据结构为什么有的编程规范要求使用viod 0代替undefined? 字符串有最大长度吗？ 0.1+0.2不是等于0.3么？为什么JavaScript里不是这样？ ES6新加入的Symbol是个什么东西？ 为什么给对象添加的方法可以用在基本类型上？ 运行时的类型是代码实际执行过程中我们用到的类型。所有的类型数据都会属于7个类型之一。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="lovestave">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2020/09/28/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/index.html">
 <meta property="og:site_name" content="lovestave">
+<meta property="og:description" content="[TOC] javascript 知识架构文法词法语法语义运行时数据结构为什么有的编程规范要求使用viod 0代替undefined? 字符串有最大长度吗？ 0.1+0.2不是等于0.3么？为什么JavaScript里不是这样？ ES6新加入的Symbol是个什么东西？ 为什么给对象添加的方法可以用在基本类型上？ 运行时的类型是代码实际执行过程中我们用到的类型。所有的类型数据都会属于7个类型之一。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-09-28T02:08:35.764Z">
+<meta property="article:modified_time" content="2020-09-28T02:05:34.075Z">
 <meta property="article:author" content="威宇 裴">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-重学前端" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-重学前端" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/09/28/%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF/" class="article-date">
   <time datetime="2020-09-28T02:08:35.764Z" itemprop="datePublished">2020-09-28</time>
@@ -300,110 +302,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-使用hexo与github搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/04/%E4%BD%BF%E7%94%A8hexo%E4%B8%8Egithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2020-09-04T11:56:06.000Z" itemprop="datePublished">2020-09-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/04/%E4%BD%BF%E7%94%A8hexo%E4%B8%8Egithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">&#39;使用hexo与github搭建个人博客&#39;</a>
-    </h1>
+    <a href="/2020/09/04/%E4%BD%BF%E7%94%A8hexo%E4%B8%8Egithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">&#39;使用hexo与github搭建个人博客&#39;</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><h2 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h2><p>在开始一切之前，你必须已经：<br>本文所使用的环境：</p>
-<h1 id="2-搭建github博客"><a href="#2-搭建github博客" class="headerlink" title="2.搭建github博客"></a>2.搭建github博客</h1><h2 id="2-1-创建仓库"><a href="#2-1-创建仓库" class="headerlink" title="2.1 创建仓库"></a>2.1 创建仓库</h2><p>新建一个名为你的<code>用户名.github.io</code>的仓库，比如说，如果你的github用户名是<code>example</code>，那么你就新建<code>example.github.io</code>的仓库，将来你的网站访问地址就是<code>example.github.io</code>了，是不是很方便？<br>*每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。<br>几个注意的地方：</p>
-<hr>
-<p>有一个github账号，没有的话去注册一个<br>安装了node.js、npm，并了解相关基础知识<br>安装了git for windows（或者其它git客户端)</p>
-<hr>
-<p>创建成功后，默认会在你这个仓库里生成一些示例页面，以后你的网站所有代码都是放在这个仓库里啦。</p>
-<h1 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h1><h1 id="3-配置SSH-key"><a href="#3-配置SSH-key" class="headerlink" title="3. 配置SSH key"></a>3. 配置SSH key</h1><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。<br>使用git bash执行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure>
-<p>如果提示：No such file or directory 说明你是第一次使用git</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
-<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
-<p>将刚复制的内容粘贴到key那里，title随便填，保存。</p>
-<h2 id="3-1-测试是否成功"><a href="#3-1-测试是否成功" class="headerlink" title="3.1. 测试是否成功"></a>3.1. 测试是否成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
-<p>如果提示<br><code>Are you sure you want to continue connecting (yes/no)?</code><br>输入yes</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/04/%E4%BD%BF%E7%94%A8hexo%E4%B8%8Egithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckflwfwsa000048cp0qigg7w6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/04/hello-world/" class="article-date">
-  <time datetime="2020-09-04T11:30:33.948Z" itemprop="datePublished">2020-09-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/04/hello-world/" data-id="ckflwfwsv000148cpanfpc5wb" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
